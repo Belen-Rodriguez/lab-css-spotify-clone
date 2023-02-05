@@ -1,3 +1,4 @@
+
 /*
 Colors:
 
@@ -6,3 +7,152 @@ Green: #00B172
 White: #FFF
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: open sans;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.2em;
+}
+p{
+    font-weight: lighter;
+}
+/*HEADER*/
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+}
+
+nav {
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+}
+.logoImg {
+    height: 50px;
+
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li {
+    padding: 10px;
+
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+/*SECTION 1*/
+.section1 {
+    height: 600px;
+    margin-top: 60px;
+    background-image: url(/images/landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.section1 div {
+    max-width: 60%;
+   /* position: relative;
+    top: 25%;*/
+
+    font-size: 16px;
+}
+/* PROBLEMA: CON EL FLEX NO QUEDA SITUADO DONDE TOCA Y CON POSITION PASA POR ENCIMA DEL HEADER AL HACER SCROL*/
+
+.section1 div p{
+    margin-top: 1em;
+    text-align: center;
+}
+/*SECTION 2*/
+
+.section2 {
+    margin: 3em 3em 5em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 h2 {
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid #00B172;
+}
+.section2 div {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.iconWOS {
+    height: 60px;
+}
+.section2 article {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+.section2 article h3 {
+    color: #00B172;
+    margin-top: 1em;
+}
+.section2 article p {
+    text-align: center;
+    margin-top: 1em;
+}
+/*SECTION 3*/
+.section3 {
+    background-color: #00B172;
+    color: #FFF;
+    height: 420px;
+    padding: 4em;
+
+}
+
+.section3 h3{
+    margin: 1em 0;
+}
+.logoWhite {
+    height: 70px;
+}
+.mobileImg {
+    height: 380px;
+}
+.containerTextS3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.containerTextImg{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    align-items: center;
+}

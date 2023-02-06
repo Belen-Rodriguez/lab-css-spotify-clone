@@ -9,6 +9,9 @@ White: #FFF
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+html{
+    font-size: 10px;
+}
 
 *{
     margin: 0;
@@ -16,36 +19,38 @@ White: #FFF
     font-family: open sans;
 }
 h1 {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 500;
+    text-align: center;
 }
 h2{
-    font-size: 1.5em;
+    font-size: 2.4rem;
 }
 h3{
-    font-size: 1.2em;
+    font-size: 2rem;
 }
 p{
     font-weight: lighter;
+    font-size: 1.6rem;
 }
 /*HEADER*/
 header {
     width: 100%;
-    height: 60px;
+    height: 6rem;
     position: fixed;
     top: 0;
     background-color: #FFF;
 }
 
 nav {
-    margin: 5px 20px;
+    margin: 0.5rem 2rem;
     display: flex;
     flex-direction: row;    
     justify-content: space-between;
     align-items: center;
 }
 .logoImg {
-    height: 50px;
+    height: 5rem;
 
 }
 ul {
@@ -57,57 +62,59 @@ ul {
 }
 li {
     padding: 10px;
-
 }
 li a{
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
+li a:link{
+}
+li a:hover{
+    color: rgb(170, 170, 170) 
+}
+
 /*SECTION 1*/
 .section1 {
-    height: 600px;
-    margin-top: 60px;
+    height: 550px;
+    margin-top: 6rem;
     background-image: url(/images/landing.jpg);
-    background-position: center;
+    background-position: 0 -50px;
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFF;
     display: flex;
     justify-content: center;
-    align-items:center;
 }
 .section1 div {
     max-width: 60%;
+    padding-top: 20%;
    /* position: relative;
     top: 25%;*/
-
-    font-size: 16px;
 }
-/* PROBLEMA: CON EL FLEX NO QUEDA SITUADO DONDE TOCA Y CON POSITION PASA POR ENCIMA DEL HEADER AL HACER SCROL*/
+/* PROBLEMA: CON EL FLEX NO QUEDA SITUADO DONDE TOCA, POR ESO SE COLOCA VERTICALMENTE CON PADDING. CON POSITION PASA POR ENCIMA DEL HEADER AL HACER SCROL*/
 
 .section1 div p{
-    margin-top: 1em;
+    margin-top: 1.6rem;
     text-align: center;
 }
 /*SECTION 2*/
 
 .section2 {
-    margin: 3em 3em 5em 3em;
+    margin: 3rem 5rem 6rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .section2 h2 {
-    padding-bottom: 0.2em;
-    border-bottom: 0.1em solid #00B172;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.2rem solid #00B172;
 }
 .section2 div {
-    margin-top: 3em;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 .iconWOS {
     height: 60px;
@@ -121,8 +128,13 @@ li a{
 }
 .section2 article h3 {
     color: #00B172;
-    margin-top: 1em;
+    margin-top: 1.6rem;
+    text-align: center;
 }
+.section2 h3:hover{
+    color: black;
+}
+
 .section2 article p {
     text-align: center;
     margin-top: 1em;
@@ -131,19 +143,18 @@ li a{
 .section3 {
     background-color: #00B172;
     color: #FFF;
-    height: 420px;
-    padding: 4em;
-
+    margin: 3rem;
+    padding: 6rem;
 }
 
 .section3 h3{
-    margin: 1em 0;
+    margin: 1.6rem 0;
 }
 .logoWhite {
-    height: 70px;
+    height: 7rem;
 }
 .mobileImg {
-    height: 380px;
+    height: 38rem;
 }
 .containerTextS3{
     display: flex;
@@ -155,4 +166,9 @@ li a{
     grid-template-columns: 33% 33% 33%;
     justify-items: center;
     align-items: center;
+    grid-column-gap: 2rem;
 }
+@media (max-width: 600px) {
+    html {
+      font-size: 8px;
+    }
